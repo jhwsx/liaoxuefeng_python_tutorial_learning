@@ -9,6 +9,9 @@ print(list(filter(is_odd, [1, 2, 3, 5, 8, 9, 12]))) # [1, 3, 5, 9]
 # 在一个list中，删除负数，只保留整数
 print(list(filter(lambda x : x > 0, [-1, -2, 3, 4, 5]))) # [3, 4, 5]
 
+# 第一个参数为 None 时
+print(list(filter(None, [0, 1, '', False, True]))) # [1, True]
+
 # 利用 filter 求素数
 # 首先，构造从 3 开始的奇数序列
 def _odd_iter():
