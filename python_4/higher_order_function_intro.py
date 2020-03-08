@@ -23,7 +23,7 @@ TypeError: 'int' object is not callable
 def add(x, y, f):
     return f(x) + f(y)
 
-print(add(-5, 6, abs))
+print(add(-5, 6, abs)) # 11
 
 
 

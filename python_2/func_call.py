@@ -25,7 +25,9 @@ TypeError: bad operand type for abs(): 'str'
 # 调用 max() 函数，它可以接收任意多个参数，返回最大的那个
 print(max(1, 2, 3)) # 3
 print(max(1, 0, -3, 7, 9, 12)) # 12
-
+grades = [100, 0, 9, -10]
+# 接收一个 Iterable
+print(max(grades))
 # 数据类型转换函数
 
 # 把 str 转换成整数

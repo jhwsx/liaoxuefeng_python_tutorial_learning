@@ -1,4 +1,4 @@
-from collections import Iterable
+from collections.abc import Iterable
 # 创建一个 generator
 L = [x * x for x in range(10)]
 print(L) # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
@@ -95,7 +95,7 @@ Traceback (most recent call last):
     print(next(o))
 StopIteration
 '''
-# 获取 generator 的返回值
+# 获取 generator 的 return 语句的返回值
 g = fib2(6)
 while True:
     try:

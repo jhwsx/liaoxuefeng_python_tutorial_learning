@@ -14,3 +14,4 @@ ValueError: invalid literal for int() with base 10: '0xff'
 # int() for converting a hexadecimal string to an integer using a base of 16.
 print(int(hex(n1), base = 16)) # 255
 print(int(hex(n2), base = 16)) # 1000
+print(int(bin(8), base = 2)) # 8

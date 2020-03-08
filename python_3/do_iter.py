@@ -25,7 +25,7 @@ for ch in 'ABC':
     print(ch)
 
 # 判断一个对象是否是可迭代对象
-from collections import Iterable
+from collections.abc import Iterable
 
 print(isinstance('abcde', Iterable)) # True
 print(isinstance([1, 2, 3], Iterable)) # True

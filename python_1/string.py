@@ -54,8 +54,10 @@ print('Hello, %s' % 'world') # Hello, world
 print('Hi %s, your score is %d' %('Bart', 59)) # Hi Bart, your score is 59
 print('亲爱的%s你好！你%d月的话费是%.2f元，余额是%.2f元。' %('王志超', 1, 30.22, 6.18))
 print('%2d-%02d' %(3, 1)) # 3-01
+print('%s, 你好，%02d月的工资是%.2f元' %('王志超', 1, 20000000))
 # 使用字符串的 format() 方法
 print('Hello, {0}, 成绩提升了 {1:.1f}%'.format('小明', 17.125)) # Hello, 小明, 成绩提升了 17.1%
+print('{0}年，国家的经济增长率是{1:.1f}%'.format(2019, 7.88))
 
 
 

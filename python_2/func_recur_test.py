@@ -18,4 +18,4 @@ def move(n, fm, to):
     cnt += 1
 
 hanoi(4, 'A', 'B', 'C')
-hanoi(64, 'A', 'B', 'C')
+# hanoi(64, 'A', 'B', 'C')
