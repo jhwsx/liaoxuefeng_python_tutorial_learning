@@ -17,10 +17,13 @@ def lazy_sum(*args):
         return result
     return sum
 
+# 上面的例子中，内部函数 sum 可以引用外部函数 lazy_sum 的参数和局部变量，当 lazy_sum 
+# 返回函数 sum 时，相关参数和变量都保存在返回的函数中，这种成为“闭包”。
 f = lazy_sum(1, 2, 3, 4)
 print(f) # <function lazy_sum.<locals>.sum at 0x7f51b0fd28c8>
 print(f()) # 10
 
+# 每次调用 lazy_sum ，都会返回一个新的函数变量
 f1 = lazy_sum(1, 2, 3, 4) 
 f2 = lazy_sum(1, 2, 3, 4)
 print(f1) # <function lazy_sum.<locals>.sum at 0x7f8c919ea950>
