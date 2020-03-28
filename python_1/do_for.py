@@ -11,7 +11,7 @@ print(sum)
 
 # 求从 1 到 100 的和, 使用了 range(n) 函数：生成一个从 0 开始小于 n 的整数序列
 sum = 0
-for x in range(101):
+for x in range(101): # range(101)产生从0到100的整数序列
     sum += x
 print(sum)
 
